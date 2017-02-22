@@ -20,7 +20,8 @@ void UPositionReport::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	FString nameObject = GetOwner()->GetName();
+	UE_LOG(LogTemp, Warning, TEXT("Message from Log, Position Report for %s"), *nameObject);
 	
 }
 
